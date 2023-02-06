@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+/* Give a backgorund color*/
+body{
+    background-color: #0cb5db !important;
+}
+
+/* Made all element to center*/
+#containertimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+/* Given timer font size*/
+#timer{
+    font-size: 40px;
+}
