@@ -9,14 +9,20 @@ let tenstimer=0;
 
 let Interval;
 
+
+//Start the Timer
 start.addEventListener('click',function(){
     Interval=setInterval(settimer,10);
 });
 
+//Stop the Timer
 stop.addEventListener('click',function(){
     clearInterval(Interval);
 });
 
+
+
+//Reset the Timer
 reset.addEventListener('click', function(){
     clearInterval(Interval);
     secontimer="00";
@@ -24,6 +30,10 @@ reset.addEventListener('click', function(){
     second.innerHTML=secontimer;
     tens.innerHTML=tenstimer;
 })
+
+
+
+//This is the function to increase second tens.
 function settimer(){
     tenstimer++;
     if(tenstimer<=9){
